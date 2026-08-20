@@ -65,7 +65,9 @@ One classifier, four evaluations, each more honest than the last — from [`neur
 **A Head-to-Head Study of Ensemble and Deep Learning Algorithms for Flood Damage Prediction in Japan**
 P. K. Goswami and J. Arora · Zenodo, 2026 · [`10.5281/zenodo.20084689`](https://doi.org/10.5281/zenodo.20084689) · *under revision, ICDPN 2026*
 
-Random Forest, XGBoost, SVR, a DNN and linear regression, benchmarked on Japanese flood-event data from 1993–2020. A Random Forest + mutual-information feature-selection pipeline surfaced population and catchment area as dominant predictors over raw rainfall. XGBoost came out ahead; the deep model never won a window.
+Random Forest, XGBoost, SVR, a DNN and linear regression, benchmarked on Japanese flood-event data from 1993–2020 under chronological holdout plus five rolling-origin windows. A Random Forest + mutual-information feature-selection pipeline surfaced population and catchment area as dominant predictors over raw rainfall.
+
+Best holdout result: **XGBoost, RMSE 0.802 · MAE 0.632 · R² 0.372** — but XGBoost and Random Forest finish 0.004 RMSE apart against a window-to-window standard deviation of 0.077, so neither is the winner. The separation that survives is the one between both tree ensembles and the deep model, which holds in every window.
 
 ---
 

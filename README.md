@@ -21,7 +21,7 @@
 
 Most of what I build starts as a doubt about a number.
 
-A brain-tumour MRI classifier of mine reported **95.39%**. I spent a summer at DRDO's Solid State Physics Laboratory finding out how much of that was real. Patient-level leakage was worth about **5.8 points** on its own. Roughly **85%** of the images in the second dataset that gets used for "external validation" turned out to be duplicates of the first. Under ImageNet-C-style corruption the same model fell to **38.5%** while staying confident — which is how a deployed model fails without anyone noticing.
+A brain-tumour MRI classifier of mine reported **95.19%**. I spent a summer at DRDO's Solid State Physics Laboratory finding out how much of that was real. Patient-level leakage was worth about **5.8 points** on its own. Roughly **85%** of the images in the second dataset that gets used for "external validation" turned out to be duplicates of the first. Under ImageNet-C-style corruption the same model fell to **38.5%** while staying confident — which is how a deployed model fails without anyone noticing.
 
 That habit is the through-line, and it isn't only a research one. In a neural network I wrote from scratch it meant reading the training loop until I understood why it wanted 2,000 epochs, and then not needing them. In an LLM assistant over 3,397 government welfare schemes it meant the model answers by **calling a search tool and never from parametric memory**, so it cannot invent an eligibility rule for someone who is counting on the money.
 

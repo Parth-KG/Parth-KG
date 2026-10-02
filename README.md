@@ -50,8 +50,8 @@ One classifier, four evaluations, each more honest than the last — from [`neur
 | Project | What it is | Receipt |
 | :-- | :-- | :-- |
 | **[neuroscan-ood](https://github.com/Parth-KG/neuroscan-ood)** | An audit of a medical-imaging benchmark: leakage, corruption robustness, calibration, and label-free fixes. Config-driven package, unit-tested, CI on every push. | 5.8 pts of leakage · ~85% cross-dataset duplication · AdaBN + selective prediction recover most of the loss |
-| **[Flood-Prediction](https://github.com/Parth-KG/Flood-Prediction)** | Five regressors on 28 years of Kanto-region flood records under time-aware validation — chronological holdout plus rolling-origin windows. | Tree ensembles beat the deep model in **every** window · published, DOI below |
-| **[Sarkari-Sahayak](https://github.com/Jagrit7/Sarkari-Sahayak)** | Voice + chat assistant over 3,397 welfare schemes. Hybrid BM25 + dense retrieval fused by RRF; a phone line that works on a keypad handset with no internet. | Top 4, Agent{a}thon 2026 · smaller model on the voice path, larger on chat, stateless backend |
+| **[Flood-Prediction](https://github.com/Parth-KG/Flood-Prediction)** | Five regressors on 28 years of Kanto-region flood records under time-aware validation: a chronological holdout plus rolling-origin windows. | Tree ensembles beat the deep model in **every** window · preprint, DOI below |
+| **[Sarkari-Sahayak](https://github.com/Jagrit7/Sarkari-Sahayak)** | Voice + chat assistant over 3,397 welfare schemes, built end to end in a team of four. Hybrid BM25 + dense retrieval fused by RRF; a phone line that works on a keypad handset with no internet. | Top 4, Agent{a}thon 2026 · smaller model on the voice path, larger on chat, stateless backend |
 | **[lang-helper-bot](https://github.com/Parth-KG/lang-helper-bot)** | Multilingual correction and translation bot, live on Telegram, WhatsApp and Discord — by text or voice note. | One platform-agnostic engine; each app is a thin adapter, so a fourth platform is one file, not a rewrite |
 | **[MultiClass-Digit-Classification](https://github.com/Parth-KG/MultiClass-Digit-Classification)** | A 784–64–10 network with every gradient derived and coded by hand. NumPy only, no framework. | 97.26% on MNIST · 2,000 epochs → 30 after rewriting the numerical core |
 | **[MeraPaisa](https://github.com/Parth-KG/MeraPaisa)** | Native Android IOU and expense tracker, shipped solo. Multi-currency balances, lock-on-edit split redistribution, rollback to any past entry. | Kotlin · Jetpack Compose · most-starred repo here |
@@ -63,11 +63,11 @@ One classifier, four evaluations, each more honest than the last — from [`neur
 ## Publication
 
 **A Head-to-Head Study of Ensemble and Deep Learning Algorithms for Flood Damage Prediction in Japan**
-P. K. Goswami and J. Arora · Zenodo, 2026 · [`10.5281/zenodo.20084689`](https://doi.org/10.5281/zenodo.20084689) · *under revision, ICDPN 2026*
+P. K. Goswami, J. Arora and Indu · *under revision, PAUL 2026* · earlier preprint: [`10.5281/zenodo.20084689`](https://doi.org/10.5281/zenodo.20084689)
 
-Random Forest, XGBoost, SVR, a DNN and linear regression, benchmarked on Japanese flood-event data from 1993–2020 under chronological holdout plus five rolling-origin windows. A Random Forest + mutual-information feature-selection pipeline surfaced population and catchment area as dominant predictors over raw rainfall.
+Random Forest, XGBoost, SVR, a DNN and linear regression, benchmarked on 5,704 Kanto-region flood events from 1993–2020 under a chronological holdout plus five rolling-origin windows. A Random Forest + mutual-information feature-selection pipeline surfaced population and catchment area as dominant predictors over raw rainfall.
 
-Best holdout result: **XGBoost, RMSE 0.802 · MAE 0.632 · R² 0.372** — but XGBoost and Random Forest finish 0.004 RMSE apart against a window-to-window standard deviation of 0.077, so neither is the winner. The separation that survives is the one between both tree ensembles and the deep model, which holds in every window.
+Best holdout result: **XGBoost, RMSE 0.805 · MAE 0.634 · R² 0.368**. XGBoost and Random Forest finish 0.001 RMSE apart across the rolling windows, against a window-to-window standard deviation of 0.077, and a Diebold–Mariano test can't separate them on the holdout (p = 0.45), so neither is the winner. The separation that survives is the one between both tree ensembles and the deep model, which holds in every window.
 
 ---
 
@@ -88,7 +88,7 @@ Foundations   DSA · OOP · Operating Systems · DBMS · Networks · Theory of C
 
 - **B.Tech, Information Technology** (minor in AI/ML) at MSIT, GGSIPU — graduating Aug 2027.
 - Extending the `neuroscan-ood` audit toward external validation across acquisition sources.
-- Reading for graduate study in Japan. NAT-Test 5Q held, 4Q booked — basic conversational Japanese, no more than that.
+- Reading for graduate study in Japan. NAT-Test 5Q held, working toward N4: basic conversational Japanese, no more than that.
 - Open to work in Delhi NCR or remote: applied ML, research engineering, or C++/Python systems.
 
 ---

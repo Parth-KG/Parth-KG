@@ -25,9 +25,9 @@
   <rect x="56" y="212" width="96" height="3" rx="1.5" fill="#9a5b00"/>
   <text x="56" y="256" class="tag" fill="#111820">I check whether the number is real.</text>
   <text x="56" y="294" class="meta" fill="#5b6875">B.Tech IT (AI/ML)  ·  Research Intern, DRDO / SSPL  ·  Delhi NCR</text>
-  <text x="56" y="316" class="meta" fill="#5b6875">First author  ·  DOI 10.5281/zenodo.20084689</text>
+  <text x="56" y="316" class="meta" fill="#5b6875">First author  ·  accepted, PAUL 2026</text>
   <text x="1144.0" y="54" class="eyebrow" text-anchor="end" fill="#5b6875">NEUROSCAN-OOD · FIG. 1</text>
-  <text x="1144.0" y="74" class="micro" text-anchor="end" fill="#5b6875" opacity="0.8">one classifier, four honest evaluations</text>
+  <text x="1144.0" y="74" class="micro" text-anchor="end" fill="#5b6875" opacity="0.8">one architecture, four honest evaluations</text>
   <line x1="700.0" y1="122.0" x2="1144.0" y2="122.0" stroke="#0e7490" stroke-width="1" stroke-dasharray="3 5" opacity="0.85" class="refline"/>
   <text x="1144.0" y="113.0" class="micro" text-anchor="end" fill="#0e7490">what the benchmark reports</text>
   <rect class="bar" x="726.0" y="122.0" width="70.0" height="190.0" rx="2" fill="#9a5b00" opacity="1.00" style="transform-origin:761.0px 312.0px;animation-delay:0.10s"/>

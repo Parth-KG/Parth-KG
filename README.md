@@ -95,7 +95,7 @@ Foundations   DSA · OOP · Operating Systems · DBMS · Networks · Theory of C
 
 - **B.Tech, Information Technology** (minor in AI/ML) at MSIT, GGSIPU — graduating Aug 2027.
 - Extending the `neuroscan-ood` audit toward external validation across acquisition sources.
-- Reading for graduate study in Japan. NAT-Test 5Q held, working toward N4: basic conversational Japanese, no more than that.
+- NAT-Test 5Q held, working toward N4: basic conversational Japanese.
 - Open to work in Delhi NCR or remote: applied ML, research engineering, or C++/Python systems.
 
 ---
